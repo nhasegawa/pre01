@@ -5,7 +5,7 @@
 liveagent.init('https://d.la1-c2cs-ukb.salesforceliveagent.com/chat', '5720l0000004CDE', '00D0l000000CtL3');
 </script>
 
-<a id="liveagent_button_online_5730l0000004CDT" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5730l0000004CDT')"><!-- �I�����C���`���b�g�R���e���c --></a><div id="liveagent_button_offline_5730l0000004CDT" style="display: none;"><!-- �I�t���C���`���b�g�R���e���c --></div><script type="text/javascript">
+<a id="liveagent_button_online_5730l0000004CDT" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5730l0000004CDT')"><!-- オンラインチャットコンテンツ --></a><div id="liveagent_button_offline_5730l0000004CDT" style="display: none;"><!-- オフラインチャットコンテンツ --></div><script type="text/javascript">
 if (!window._laq) { window._laq = []; }
 window._laq.push(function(){liveagent.showWhenOnline('5730l0000004CDT', document.getElementById('liveagent_button_online_5730l0000004CDT'));
 liveagent.showWhenOffline('5730l0000004CDT', document.getElementById('liveagent_button_offline_5730l0000004CDT'));
@@ -13,8 +13,43 @@ liveagent.showWhenOffline('5730l0000004CDT', document.getElementById('liveagent_
 
 
 
-<button onclick="liveagent.startChat('5730l0000004CDT');">�e�X�g�`���b�g</button><br>
+<button onclick="liveagent.startChat('5730l0000004CDT');">テストチャット</button><br>
 <div id="liveagent_invite_button_5730l0000004CDT" style="display:none;">
 
+<!--  ----------------------------------------------------------------------  -->
+<!--  次の <META> 要素を、HTML の <HEAD>タグ間に追加してください。必要に応じて、charset                  -->
+<!--  パラメータを変更して、HTML ページの文字コードを指定してください。                                     -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  次の <FORM> 要素をページに追加してください。                                              -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://cs5.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+<input type=hidden name="orgid" value="00DO0000004uMJE">
+<input type=hidden name="retURL" value="http://">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  注意: これらの項目は、省略可能なデバッグ用要素です。デバッグモードでテストを行う場合は、これらの行をコメント解除してください。        -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail" value="spccts@terrasky.com">     -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="name">取引先責任者名</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+<label for="email">メール</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="phone">電話</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+<label for="subject">件名</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+<label for="description">説明</label><textarea name="description"></textarea><br>
+
+<input type="submit" name="submit">
+
+</form>
 </body>
 </html>
